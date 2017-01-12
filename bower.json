@@ -1,0 +1,23 @@
+{
+  "name": "test-repo",
+  "description": "<h1>Hi this is test repository</h1>",
+  "main": "index.js",
+  "authors": [
+    "ZhuravlevaMarina <marinajuravleva28gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ZhuravlevaMarina/waxom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2",
+    "domReady": "^2.0.1",
+    "isotope": "^3.0.1"
+  }
+}
