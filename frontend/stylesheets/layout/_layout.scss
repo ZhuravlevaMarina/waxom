@@ -1,0 +1,31 @@
+.container{
+  max-width: 1233px;
+  margin: 0 auto;
+}
+  h1{
+  font-family: $fontBold;
+  font-size: 52px;
+}
+h2{
+  font-family: $fontMedium;
+  font-size: 36px;
+}
+h3{
+  font-family: 'Myriad Pro';
+  font-size: 30px;
+  color: $colorCaption;
+}
+h4{
+  font-family: 'RalewaySemiBold';
+  font-size: 18px;
+  color: $colorCaption;
+}
+p{
+  font-family: montserratLight;
+  color: #8c8c8c;
+  font-size: 16px;
+  line-height: 28px;
+}
+.whiteFont{
+  color: $whiteFont;
+}

@@ -1,0 +1,10 @@
+.container{
+  .services-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__block{
+      text-align: center;
+    }
+  }
+}
