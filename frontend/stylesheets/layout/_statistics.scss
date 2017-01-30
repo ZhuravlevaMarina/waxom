@@ -1,4 +1,55 @@
 .statistics__box{
   height: 300px;
   background: linear-gradient($colorDark, $colorBrown);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .statistics-block{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    %picture{
+      font-family: icomoon;
+      color: $colorHoverLink;
+      font-size: 40px;
+    }
+    &__user:before{
+      content: "\e972";
+      @extend %picture;
+    }
+    &__coffee:before{
+      content: "\e900";
+      @extend %picture;
+    }
+    &__blog:before{
+      content: "\e96e";
+      @extend %picture;
+    }
+    &__likes:before{
+      content: "\e9da";
+      @extend %picture;
+    }
+    &__launch:before{
+      content: "\e951";
+      @extend %picture;
+    }
+    &__data{
+      color: $whiteFont;
+      font-family: $fontUltraLight;
+      font-size: 48px;
+      margin: 25px 0 16px;
+
+    }
+    &__text{
+      color: $colorHoverLink;
+      font-family: $fontLight;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    &__line{
+      background: url(/public/images/line-statistics.png) top left repeat-x; height:3px; width:30px;
+      margin: 30px auto;
+    }
+  }
 }

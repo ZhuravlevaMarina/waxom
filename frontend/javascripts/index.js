@@ -8,6 +8,7 @@ define(["jquery", "domReady", "swiper.min"], function($) {
     var Homepage = {
         init: function () {
             this.carousel();
+            this.carouselBottom();
         },
         carousel: function () {
             var swiper = new Swiper('.swiper-container', {
@@ -15,6 +16,14 @@ define(["jquery", "domReady", "swiper.min"], function($) {
                 paginationClickable: true,
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
+                spaceBetween: 30
+            });
+        },
+        carouselBottom: function () {
+            var swiperBottom = new Swiper('.swiper-container-second', {
+                pagination: '.swiper-pagination',
+                slidesPerView: 3,
+                paginationClickable: true,
                 spaceBetween: 30
             });
         }

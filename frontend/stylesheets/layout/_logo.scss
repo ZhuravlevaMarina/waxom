@@ -1,0 +1,9 @@
+
+#logo{
+  background-image: url(/public/images/bg_footer.png);
+  .logo-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
