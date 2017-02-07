@@ -1,10 +1,61 @@
 .container{
   .services-box{
+    margin: 85px 0 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     &__block{
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 35px;
+      &:last-child{
+        margin-right: 0;
+      }
+      h4{
+        margin: 30px 0 20px;
+      }
+      &:hover {
+        h4 {
+          color: $colorHoverLink;
+        }
+        %icon {
+          color: $colorHoverLink;
+        }
+        .services-box__block__line{
+          background: url(/public/images/line_service_active.png) top left repeat-x;
+          height: 3px;
+          width: 70px;
+        }
+      }
+      %icon{
+        font-family: 'icomoon';
+        font-size: 40px;
+        color: $colorCaption;
+      }
+      &__pencil:before{
+        content: "\e906";
+        @extend %icon;
+      }
+      &__develop:before{
+        content: "\e92e";
+        @extend %icon;
+      }
+      &__custom:before {
+        content: "\e994";
+        @extend %icon;
+      }
+      &__marketing:before{
+        content: "\e9ae";
+        @extend %icon;
+      }
+      &__line{
+        background: url(/public/images/line_service.png) top left repeat-x;
+        height:3px;
+        width:70px;
+        margin: 30px auto 0px;
+      }
     }
   }
 }

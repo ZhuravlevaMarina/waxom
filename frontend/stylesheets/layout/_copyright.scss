@@ -1,0 +1,13 @@
+.copyright-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__support{
+    display: flex;
+    flex-direction: row;
+  }
+  &__design{
+    display: flex;
+    flex-direction: row;
+  }
+}

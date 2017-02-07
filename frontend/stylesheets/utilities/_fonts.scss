@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'RalewayExtraBold';
-  src: url('../fonts/RalewayExtraBold.eot');
-  src: local('☺'), url('../fonts/RalewayExtraBold.woff') format('woff'),
-  url('../fonts/RalewayExtraBold.ttf') format('truetype');
+  font-family: 'RalewayRegular';
+  src: url('../fonts/RalewayRegular.eot');
+  src: local('☺'), url('../fonts/RalewayRegular.woff') format('woff'),
+  url('../fonts/RalewayRegular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'RalewayMedium';
@@ -15,6 +15,12 @@
   src: url('../fonts/RalewaySemiBold.eot');
   src: local('☺'), url('../fonts/RalewaySemiBold.woff') format('woff'),
   url('../fonts/RalewaySemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RalewayExtraBold';
+  src: url('../fonts/RalewayExtraBold.eot');
+  src: local('☺'), url('../fonts/RalewayExtraBold.woff') format('woff'),
+  url('../fonts/RalewayExtraBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'montserratLight';
@@ -60,6 +66,12 @@
 .icon-coffee2:before {
   content: "\e901";
 }
+.icon-pencil2:before {
+  content: "\e906";
+}
+.icon-stack:before {
+  content: "\e92e";
+}
 .icon-bell:before {
   content: "\e951";
 }
@@ -68,6 +80,12 @@
 }
 .icon-users:before {
   content: "\e972";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
 }
 .icon-heart:before {
   content: "\e9da";

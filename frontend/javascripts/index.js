@@ -24,6 +24,8 @@ define(["jquery", "domReady", "swiper.min"], function($) {
                 pagination: '.swiper-pagination',
                 slidesPerView: 3,
                 paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
                 spaceBetween: 30
             });
         }

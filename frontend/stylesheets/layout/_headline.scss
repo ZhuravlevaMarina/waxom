@@ -1,26 +1,34 @@
 #headline {
   background-image: url(/public/images/bg.png);
-  width: 100%;
-  height: 100%;
-  position: relative;
   .container {
     max-width: 1233px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     position: relative;
     .site-header {
+      margin: 40px 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       &__nav {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        font-family: $fontLight;
+        font-size: $font14;
         .site-navigation {
           display: flex;
           flex-direction: row;
-          &__link {
-            color: $colorLink;
-            &:hover {
-              color: $colorHoverLink;
+          &__item {
+            padding-right: 30px;
+            &__link {
+              color: $colorLink;
+              &:hover {
+                color: $colorHoverLink;
+              }
             }
           }
         }
