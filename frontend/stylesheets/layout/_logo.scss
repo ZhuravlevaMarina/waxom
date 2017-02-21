@@ -4,11 +4,12 @@
     .logo-box {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      padding: 140px 0 0;
+      justify-content: space-around;
+      align-items: center;
+      padding: 139px 0 137px;
+      width: 100%;
       img {
         width: 100%;
-        height: 100%;
       }
     }
   }

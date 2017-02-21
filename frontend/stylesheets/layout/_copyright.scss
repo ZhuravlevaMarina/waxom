@@ -1,33 +1,45 @@
 #copyright {
   background-color: $bgBlack;
-  .copyright-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 0 52px;
-    color: $colorText;
-    font-family: $fontLight;
-    &__support {
+  .container {
+    margin: 0 auto;
+    .copyright-box {
       display: flex;
       flex-direction: row;
-      align-items: baseline;
       justify-content: space-between;
-
-      a{
-        color: $colorText;
-        border-right: 1px solid $colorText;
-        padding: 0 10px 0;
-        &:last-child{
-          border-right: none;
-        }
-        &:hover{
-          color: $colorHoverLink;
+      padding: 50px 0 52px;
+      color: $colorText;
+      font-family: $fontLight;
+      &__support {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        a {
+          line-height: 18px;
+          color: $colorText;
+          border-right: 1px solid $colorText;
+          padding: 0 10px 0;
+          &:last-child {
+            border-right: none;
+          }
+          &:hover {
+            color: $colorHoverLink;
+          }
         }
       }
-    }
-    &__design {
-      display: flex;
-      flex-direction: row;
+      &__design {
+        display: flex;
+        flex-direction: row;
+        p{
+          border-right: 1px solid $colorText;
+          padding: 0 10px 0;
+          line-height: 18px;
+          p:last-child{
+            border-right: none;
+            padding: 0;
+          }
+        }
+      }
     }
   }
 }

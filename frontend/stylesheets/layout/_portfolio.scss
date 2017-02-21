@@ -1,8 +1,6 @@
-.container{
-  margin-bottom: 80px;
-  .portfolio__box{
+.portfolio__box{
     text-align: center;
-    .button{
+  .button{
       font-family: $fontLight;
       font-size: $font14;
       color: $colorText;
@@ -83,5 +81,4 @@
       margin: 40px auto 0;
     }
   }
-}
 
