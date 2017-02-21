@@ -1,24 +1,27 @@
 #purchase{
   background-color: $bgLine;
-  .purchase__box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 30px 51px;
-    &__text{
-      text-align: left;
-      &-caption{
-        font-family: $fontRegular;
-        font-size: 28px;
-        color: $whiteFont;
-        .textBrown{
-          color: $colorHoverLink;
+  .container {
+    margin-top: 0;
+    .purchase__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px 30px 51px;
+      &__text {
+        text-align: left;
+        &-caption {
+          font-family: $fontRegular;
+          font-size: 28px;
+          color: $whiteFont;
+          .textBrown {
+            color: $colorHoverLink;
+          }
         }
-      }
-      &-rubric{
-        font-family: $fontLight;
-        font-size: 18px;
-        margin-top: 15px;
+        &-rubric {
+          font-family: $fontLight;
+          font-size: 18px;
+          margin-top: 15px;
+        }
       }
     }
   }

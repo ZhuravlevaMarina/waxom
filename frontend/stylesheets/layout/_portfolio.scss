@@ -1,5 +1,13 @@
 .portfolio__box{
   text-align: center;
+  .button{
+    font-family: $fontLight;
+    font-size: $font14;
+    color: $colorText;
+    &:hover{
+      color: $colorLink;
+    }
+  }
   .isotope{
     .grid-item{
       width: 370px;
