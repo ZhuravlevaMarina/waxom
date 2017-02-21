@@ -63,6 +63,13 @@ gulp.task('image:build', function(){                    // Task to relocate imag
         .pipe(gulp.dest('./public/images'));            // destination for optimized images
 });
 
+gulp.task('css:copy', function(){                    // Task to relocate images from frontend folder to public folder
+    gulp.src([                                          // path to files to build
+        './frontend/stylesheet/**/*.css'
+    ])                              // minimize images
+        .pipe(gulp.dest('./public/css'));            // destination for optimized images
+});
+
 gulp.task('font:build', function(){                    // Task to relocate fonts from frontend folder to public folder
     gulp.src([                                          // path to files to build
         './frontend/fonts/**/*.ttf',
@@ -98,6 +105,7 @@ gulp.task('main-bower-files', function() {                      // Task to put b
 gulp.task('default', [      // This is default task. You car run it wrining 'gulp' in command prompt
     'browser-sync',         //
     'sass',
+    'css:copy',
     'font:build',
     'image:watch',          //
     'main-bower-files',     //

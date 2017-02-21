@@ -1,4 +1,10 @@
 #video{
   background: url(/public/images/bg_video.png);
   width: 100%;
+  h3{
+    color: $whiteFont;
+  }
+  .mainFont {
+    color: $whiteFont;
+  }
 }

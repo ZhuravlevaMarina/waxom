@@ -2,7 +2,7 @@ requirejs.config({
     baseUrl: './public/js'
 });
 
-define(["jquery", "domReady", "swiper.min", "isotope.pkgd.min"], function($) {
+define(["jquery", "domReady", "swiper.min", "isotope.pkgd.min"], function($, domReady, Swiper, Isotope) {
     "use strict";
 
     var Homepage = {

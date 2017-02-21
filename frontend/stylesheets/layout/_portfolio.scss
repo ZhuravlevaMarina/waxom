@@ -1,67 +1,67 @@
-.portfolio__box{
-  text-align: center;
-  .button{
-    font-family: $fontLight;
-    font-size: $font14;
-    color: $colorText;
-    &:hover{
-      color: $colorLink;
-    }
-  }
-  .isotope{
-    .grid-item{
-      width: 370px;
-      height: 337px;
-      position: relative;
-      background-color: $bgSection;
-      &__name{
-        color: $colorHoverLink;
-        font-size: 20px;
-        font-family: $fontMedium;
-      }
-      &__block{
-        color: $colorGreyText;
-        font-family: $fontLight;
-        font-size: 14px;
-      }
-      &:after{
-        content: '';
-        background: url(/public/images/arrow.png);
-        width: 30px;
-        height: 10px;
-        position: absolute;
-        top: 227px;
-        left: 20px;
-      }
-      &:hover:after{
-        content: '';
-        background: url(/public/images/arrow-brown.png);
-        width: 30px;
-        height: 10px;
-        position: absolute;
-        top: 227px;
-        left: 20px;
-      }
-      img{
-        opacity: 0.8;
-        margin-bottom: 0;
-        position: relative;
-      }
+.container{
+  margin-bottom: 80px;
+  .portfolio__box{
+    text-align: center;
+    .button{
+      font-family: $fontLight;
+      font-size: $font14;
+      color: $colorText;
       &:hover{
-          background-color: $bgText;
-        img{
-          opacity: 1;
-        }
-        .grid-item__name{
-          color: $whiteFont;
-        }
-        .grid-item__block{
+        color: $colorLink;
+      }
+    }
+    .isotope{
+      .grid-item{
+        width: 370px;
+        height: 337px;
+        margin-right: 30px;
+        position: relative;
+        background-color: $bgSection;
+        &__name{
           color: $colorHoverLink;
+          font-size: 20px;
+          font-family: $fontMedium;
         }
-      }
-      &__text{
-        text-align: left;
-      }
+        &__block{
+          color: $colorGreyText;
+          font-family: $fontLight;
+          font-size: 14px;
+        }
+        &:after{
+          content: '';
+          background: url(/public/images/arrow.png);
+          width: 30px;
+          height: 10px;
+          position: absolute;
+          top: 227px;
+          left: 20px;
+        }
+        &:hover:after{
+          content: '';
+          background: url(/public/images/arrow-brown.png);
+          width: 30px;
+          height: 10px;
+          position: absolute;
+          top: 227px;
+          left: 20px;
+        }
+        img{
+          opacity: 0.8;
+          margin-bottom: 0;
+          position: relative;
+        }
+        &:hover{
+          background-color: $bgText;
+          img{
+            opacity: 1;
+          }
+          .grid-item__name{
+            color: $whiteFont;
+          }
+          .grid-item__block{
+            color: $colorHoverLink;
+          }
+        }
       }
       .box_hover{
         opacity: 0;
@@ -79,4 +79,9 @@
         }
       }
     }
+    .brown-button{
+      margin: 40px auto 0;
+    }
   }
+}
+
