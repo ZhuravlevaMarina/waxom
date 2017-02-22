@@ -34,9 +34,9 @@
           border-right: 1px solid $colorText;
           padding: 0 10px 0;
           line-height: 18px;
-          p:last-child{
+          &:last-child{
             border-right: none;
-            padding: 0;
+            padding: 0 0 0 10px;
           }
         }
       }
