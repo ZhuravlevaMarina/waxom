@@ -1,8 +1,11 @@
 #headline {
   background-image: url(/public/images/bg.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
   .container {
+    margin-top: 0;
     max-width: 1233px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,17 +16,29 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      .logo img{
+        @include mq-medium{
+          width: 90%;
+        }
+      }
       &__nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         font-family: $fontLight;
         font-size: $font14;
+        padding-left: 20px;
+        @include mq-medium{
+          font-size: $font12;
+        }
         .site-navigation {
           display: flex;
           flex-direction: row;
           &__item {
             padding-right: 30px;
+            @include mq-medium{
+              padding: 5px;
+            }
             &__link {
               color: $colorLink;
               &:hover {
@@ -32,7 +47,13 @@
             }
           }
         }
+        &__icons a {
+          padding-right: 25px;
+          @include mq-medium{
+            padding-right: 0;
+          }
+        }
+        }
       }
     }
   }
-}

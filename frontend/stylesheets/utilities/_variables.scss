@@ -1,6 +1,9 @@
 // Widths
 $width: 1600px;
 $widthContainer: 1100px;
+$screen-small: 480px;
+$screen-medium: 760px;
+$screen-larger: 1000px;
 //Heights
 $sectionHeight: 1000px;
 //Colors
@@ -33,7 +36,7 @@ $fontBold: 'RalewayExtraBold';
 $fontSemiBold: 'RalewaySemiBold';
 $fontLight: 'montserratLight';
 $fontUltraLight: 'MontserratUltraLight';
-$font24: 24px;
-$font14: 14px;
-$font12: 12px;
+$font24: 1.5em;
+$font14: 0.875em;
+$font12: 0.75em;
 

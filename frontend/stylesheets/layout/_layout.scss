@@ -1,36 +1,39 @@
 .container{
   max-width: 1233px;
-  margin: 0 auto;
+  margin: 80px auto 0;
+  @include mq-medium{
+    margin-top: 20px;
+  }
 }
 h1{
   font-family: $fontBold;
-  font-size: 52px;
+  font-size: 3.25em;
 }
 h2{
   font-family: $fontMedium;
-  font-size: 36px;
+  font-size: 2.25em;
 }
 h3{
   font-family: $fontSemiBold;
-  font-size: 30px;
+  font-size: 1.875em;
   color: $colorCaption;
 }
 h4{
   font-family: $fontSemiBold;
-  font-size: 18px;
+  font-size: 1.125em;
   color: $colorCaption;
 }
 .mainFont{
   font-family: $fontLight;
   color: $colorText;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1em;
+  line-height: 1.75em;
   margin: 30px 0 45px;
 }
 p{
   font-family: $fontLight;
   font-size: $font14;
-  line-height: 24px;
+  line-height: 1.5em;
   color: $colorText;
 }
 .whiteFont{

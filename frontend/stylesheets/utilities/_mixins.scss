@@ -1,3 +1,23 @@
+@mixin mq-small {
+  @media (max-width: $screen-small) {
+    @content;
+  }
+}
+@mixin mq-medium {
+  @media(min-width: $screen-small) and (max-width: $screen-medium - 1px){
+    @content;
+  }
+}
+@mixin mq-medium-up{
+  @media (min-width: $screen-medium) and (max-width: $screen-larger - 1px) {
+    @content;
+  }
+}
+@mixin mq-large-up{
+  @media  (min-width: $screen-larger){
+  @content;
+  }
+}
 @mixin anim($param: all, $dur: .15s, $type: ease-in-out, $delay: 0s) {
   transition: $param $dur $type $delay;
 }
