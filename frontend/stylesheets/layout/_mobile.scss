@@ -1,26 +1,66 @@
 .mobile-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: left;
   margin: 80px auto 0;
+  @include mq-small{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  &__image{
+    display: flex;
+    align-items: flex-end;
     img {
       padding: 0;
       margin: 0;
+      width: 100%;
     }
-  .mobile-box__list {
-    padding-left: 50px;
-    .mobile-box__item {
-      position: relative;
+    @include mq-small{
+      width: 50%;
+    }
+  }
+  &__text {
+    img {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    max-width: 666px;
+    .mobile-box__list {
       padding-left: 50px;
-      &:before {
-        content: '';
-        position: absolute;
-        background: url(/public/images/list.png);
-        width: 21px;
-        height: 21px;
-        top: 3px;
-        left: 0;
+      @include mq-small{
+        padding-left: 10px;
+      }
+      .mobile-box__item {
+        position: relative;
+        padding-left: 50px;
+        @include mq-medium{
+          font-size: $font14;
+          line-height: 1.4em;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          background: url(/public/images/list.png);
+          width: 21px;
+          height: 21px;
+          top: 5px;
+          left: 0;
+        }
+      }
+    }
+    .mainFont{
+      @include mq-medium{
+        margin: 5px 0 10px;
+      }
+    }
+    h3 {
+      @include mq-small {
+        text-align: center;
+        margin-top: 10px;
       }
     }
   }

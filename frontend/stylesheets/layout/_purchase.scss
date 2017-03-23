@@ -7,20 +7,43 @@
       flex-direction: row;
       justify-content: space-between;
       padding: 50px 30px 51px;
+      @include mq-medium {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include mq-small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       &__text {
         text-align: left;
+        @include mq-small{
+          text-align: center;
+        }
         &-caption {
           font-family: $fontRegular;
-          font-size: 28px;
+          font-size: 1.75em;
           color: $whiteFont;
           .textBrown {
             color: $colorHoverLink;
           }
+          @include mq-small{
+            font-size: 1.5em;
+            line-height: 1.2em;
+          }
         }
         &-rubric {
           font-family: $fontLight;
-          font-size: 18px;
-          margin-top: 15px;
+          font-size: 1.125em;
+          margin: 15px 0 0;
+          @include mq-medium{
+            margin: 0 0 15px;
+          }
+          @include mq-small{
+            margin: 10px 0 15px;
+          }
         }
       }
     }

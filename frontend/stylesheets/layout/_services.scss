@@ -1,15 +1,22 @@
 .container{
   .services-box{
-    margin: 85px 0 80px;
+    margin: 0 0 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include mq-small{
+      flex-direction: column;
+      margin: 0 20px 40px;
+    }
     &__block{
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-right: 35px;
+      @include mq-small{
+        margin-right: 0;
+      }
       &:last-child{
         margin-right: 0;
       }

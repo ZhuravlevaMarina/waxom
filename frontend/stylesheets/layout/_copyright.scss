@@ -7,6 +7,9 @@
       flex-direction: row;
       justify-content: space-between;
       padding: 50px 0 52px;
+      @include mq-small{
+        padding: 10px;
+      }
       color: $colorText;
       font-family: $fontLight;
       &__support {
@@ -14,11 +17,17 @@
         flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
+        @include mq-small {
+          flex-direction: column;
+        }
         a {
           line-height: 18px;
           color: $colorText;
           border-right: 1px solid $colorText;
           padding: 0 10px 0;
+          @include mq-small {
+            border-right: none;
+          }
           &:last-child {
             border-right: none;
           }
@@ -30,6 +39,9 @@
       &__design {
         display: flex;
         flex-direction: row;
+        @include mq-small {
+          flex-direction: column;
+        }
         p{
           border-right: 1px solid $colorText;
           padding: 0 10px 0;
@@ -37,6 +49,9 @@
           &:last-child{
             border-right: none;
             padding: 0 0 0 10px;
+          }
+          @include mq-small {
+            border-right: none;
           }
         }
       }

@@ -2,8 +2,12 @@
   background: url(/public/images/bg_video.png);
   width: 100%;
   margin: 80px auto 0;
+  @include mq-small{
+    margin-top: 40px;
+  }
   h3{
     color: $whiteFont;
+    padding-top: 50px;
   }
   .mainFont {
     color: $whiteFont;

@@ -31,6 +31,9 @@
         @include mq-medium{
           font-size: $font12;
         }
+        @include mq-small{
+          display: none;
+        }
         .site-navigation {
           display: flex;
           flex-direction: row;
