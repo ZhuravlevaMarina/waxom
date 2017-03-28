@@ -41,6 +41,7 @@
         flex-direction: row;
         @include mq-small {
           flex-direction: column;
+          justify-content: space-between;
         }
         p{
           border-right: 1px solid $colorText;

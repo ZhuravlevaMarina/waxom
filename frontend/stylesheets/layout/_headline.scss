@@ -32,15 +32,33 @@
           font-size: $font12;
         }
         @include mq-small{
-          display: none;
+          flex-direction: column;
+          font-size: $font12;
+          padding: 0;
         }
         .site-navigation {
           display: flex;
           flex-direction: row;
+          @include mq-small{
+            display: none;
+            position: absolute;
+            flex-direction: column;
+          }
+          @include mq-small{
+            position: absolute;
+            top: 45px;
+            right: -35px;
+            width: 120px;
+            text-align: left;
+            background-color: $colorButton;
+          }
           &__item {
             padding-right: 30px;
             @include mq-medium{
               padding: 5px;
+            }
+            @include mq-small{
+              padding: 10px 0 10px 10px;
             }
             &__link {
               color: $colorLink;
@@ -54,6 +72,48 @@
           padding-right: 25px;
           @include mq-medium{
             padding-right: 0;
+          }
+        }
+        @include mq-small {
+          /** Cтили бургера**/
+          .call-navi {
+            display: block;
+            height: 40px;
+            width: 50px;
+            background: $colorHoverLink;
+            position: absolute;
+            right: 35px;
+            top: 5px;
+          }
+          .call-navi.active {
+            background: $colorButton;
+          }
+          .call-navi:after, .call-navi:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 3px;
+            width: 15px;
+            background: #fff;
+            margin: auto;
+            box-shadow: 0 -6px #fff, 0 6px #fff;
+          }
+          .call-navi.active:after {
+            box-shadow: none;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          .call-navi.active:before {
+            box-shadow: none;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
           }
         }
         }

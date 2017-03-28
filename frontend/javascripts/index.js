@@ -7,9 +7,23 @@ define(["jquery", "domReady", "swiper.min", "isotope.pkgd.min"], function($, dom
 
     var Homepage = {
         init: function () {
+            this.burger();
             this.carousel();
             this.carouselBottom();
             this.tabsBox();
+        },
+        burger: function() {
+            $(window).on('load', function(){
+                $('.loader').fadeOut('slow');
+            });
+            $('.call-navi').click(function(e){
+                e.preventDefault();
+                $(this)
+                    .toggleClass('active')
+                    .parents('nav')
+                    .find('ul')
+                    .slideToggle();
+            });
         },
         carousel: function () {
             var swiper = new Swiper('.swiper-container', {
