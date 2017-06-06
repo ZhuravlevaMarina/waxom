@@ -61,7 +61,9 @@
       text-transform: uppercase;
     }
     &__line{
-      background: url(/public/images/line-statistics.png) top left repeat-x; height:3px; width:30px;
+      background: url(/public/images/line-statistics.png) top left repeat-x;
+      height:3px;
+      width:30px;
       margin: 30px auto;
     }
   }
