@@ -9,6 +9,7 @@
       padding: 50px 0 52px;
       @include mq-small{
         padding: 10px;
+        font-size: 0.8em;
       }
       color: $colorText;
       font-family: $fontLight;

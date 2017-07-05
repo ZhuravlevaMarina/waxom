@@ -1,5 +1,5 @@
 .container{
-  max-width: 1233px;
+  max-width: 1170px;
   margin: 80px auto 0;
   @include mq-medium{
     margin: 40px auto 0;
@@ -53,10 +53,10 @@ h4{
   color: $colorText;
   font-size: 1em;
   line-height: 1.75em;
-  margin: 30px 30px 0 45px;
+  margin: 30px auto;
   max-width: 775px;
   @include mq-small{
-    font-size: .8em;
+    font-size: .7em;
   }
 }
 p{

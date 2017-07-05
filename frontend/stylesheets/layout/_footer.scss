@@ -11,8 +11,16 @@
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
+      align-items: baseline;
       @include mq-small{
         flex-direction: column;
+      }
+      &__text{
+        font-family: $fontLight;
+        color: $colorText;
+        font-size: 1em;
+        line-height: 1.75em;
+        margin: 30px 0 40px 0;
       }
       .title {
         font-family: $fontSemiBold;
@@ -48,18 +56,15 @@
         color: $blueText;
       }
       &__logo {
-        p {
-          padding: 30px 0 60px;
-          @include mq-small{
-            padding: 10px 0;
-          }
-        }
         padding-right: 30px;
         max-width: 272px;
         @include mq-small{
-          max-width: 470px;
           padding-right: 0;
           padding-bottom: 10px;
+          font-size: .875em;
+          img{
+            width: 40%;
+          }
         }
         .readMore {
           font-size: $font14;
