@@ -18,6 +18,9 @@ h1{
   @include mq-small{
     font-size: 1.7em;
   }
+  @include mq-medium-up{
+    font-size: 2em;
+  }
 }
 h2{
   font-family: $fontMedium;
